@@ -11,9 +11,9 @@ int main(void)
 	for (word = 'a'; word <= 'z'; word++)
 	{
 	if (word != 'q' && word != 'e')
-		{
-			putchar(word);
-		}
+	{
+		putchar(word);
+	}
 	}
 	putchar('\n');
 	return (0);
