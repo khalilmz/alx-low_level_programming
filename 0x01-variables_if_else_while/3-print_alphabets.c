@@ -12,7 +12,7 @@ int main(void)
 	{
 		putchar(word);
 	}
-    for (word = 'A'; word <= 'Z'; word++)
+	for (word = 'A'; word <= 'Z'; word++)
 	{
 		putchar(word);
 	}
