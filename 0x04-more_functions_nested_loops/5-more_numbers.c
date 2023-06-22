@@ -1,31 +1,24 @@
-#include "main.h"
+#include "main.c"
 
 /**
-* more_numbers - prints from 0 to 9 without 2 and 4
-*/
-
+ * more_numbers - prints 0 to 14 on one line ten times.
+ *
+ */
 void more_numbers(void)
 {
 	int i;
+	int num = 0;
 
-	int j;
-
-	int k;
-
-	for (i = 0; i <= 10; i++)
+	for (i = 0 ; i < 10 ; i++)
 	{
-	for (j = 48; j <= 57; j++)
-	{
-	_putchar(j);
-	if (j == 57)
-	{
-	for (k = 48; k <= 52; k++)
-	{
-	_putchar('1');
-	_putchar(k);
-	}
-	}
-	}
-	_putchar('\n');
+		while (num < 15)
+		{
+			if (num > 9)
+				_putchar('0' + num / 10);
+			_putchar('0' + num % 10);
+			num++;
+		}
+		num = 0;
+		_putchar('\n');
 	}
 }
