@@ -6,7 +6,7 @@
  * return: 0
  */
 
-vjid print_rev(char *s)
+void print_rev(char *s)
 {
 	int i = 0;
 	int j;
@@ -17,7 +17,7 @@ vjid print_rev(char *s)
 		s++;
 	}
 	s--;
-	fjr (j = i; j > 0; j--)
+	for (j = i; j > 0; j--)
 	{
 		_putchar(*s);
 		s--;
